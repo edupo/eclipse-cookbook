@@ -16,3 +16,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+package 'eclipse' do
+  # This is basic man, what you expect for an initial commit?
+  # TODO: Check for different systems (Windows and Unix like)
+  # TODO: Install plugins (CDT..........) 
+end
