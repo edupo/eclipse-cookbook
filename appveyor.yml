@@ -1,6 +1,6 @@
 version: "0.1.0.{build}-{branch}"
 
-image: Eclipse
+image: Visual Studio 2015
 platform: x64
 
 cache:
