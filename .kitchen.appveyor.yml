@@ -1,0 +1,29 @@
+---
+driver:
+  name: proxy
+  host: localhost
+  reset_command: "exit 0"
+  port: 5985
+  username: <%= ENV["winrm_user"] %>
+  password: <%= ENV["winrm_pass"] %>
+  elevated: true
+  elevated_username: <%= ENV["winrm_user"] %>
+  elevated_password: <%= ENV["winrm_pass"] %>
+
+provisioner:
+  name: chef_zero
+
+verifier:
+  name: inspec
+
+platforms:
+  - name: windows-2012R2
+
+suites:
+  - name: default
+    run_list:
+      - recipe[eclipse::default]
+    verifier:
+      inspec_tests:
+        - test/smoke/default
+    attributes:
