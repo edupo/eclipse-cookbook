@@ -4,7 +4,7 @@ maintainer_email 'contact@eduardolezcano.com'
 license 'apachev2'
 description 'Installs/Configures eclipse'
 long_description 'Installs/Configures Eclipse and/or its plugins (not yet).'
-version '0.1.0'
+version '0.1.1'
 
 %w(ubuntu).each do |os|
   supports os
