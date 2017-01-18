@@ -19,5 +19,5 @@
 package 'eclipse' do
   # This is basic man, what you expect for an initial commit?
   # TODO: Check for different systems (Windows and Unix like)
-  # TODO: Install plugins (CDT..........) 
+  # TODO: Install plugins (CDT..........)
 end

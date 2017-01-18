@@ -6,15 +6,15 @@ require 'stove/rake_task'
 task default: [:rubocop, :foodcritic, :spec]
 
 FoodCritic::Rake::LintTask.new do |t|
-    t.options = {
-          cookbook_paths: '.',
-	      search_gems: true
-	        }
+  t.options = {
+    cookbook_paths: '.',
+    search_gems: true
+  }
 end
 
 RSpec::Core::RakeTask.new do |task|
-    task.pattern = 'spec/**/*_spec.rb'
-      task.rspec_opts = ['--color', '-f documentation', '-tunit']
+  task.pattern = 'spec/**/*_spec.rb'
+  task.rspec_opts = ['--color', '-f documentation', '-tunit']
 end
 
 RuboCop::RakeTask.new

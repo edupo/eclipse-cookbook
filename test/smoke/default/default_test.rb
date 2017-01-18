@@ -1,5 +1,3 @@
-# # encoding: utf-8
-
 # Inspec test for recipe eclipse::default
 
 unless os.windows?
